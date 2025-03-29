@@ -23,6 +23,11 @@ app.use(bodyParser.json());
 const tasksRoutes = require('./routes/tasks');
 app.use('/api/tasks', tasksRoutes);
 
+// Add a root route to respond to GET requests at "/"
+app.get('/', (req, res) => {
+  res.send('Welcome to the DEVOP2 API!');
+});
+
 // Start the server using the port from config.js
 app.listen(config.port, () => {
   console.log(`Server is running on port ${config.port}`);
