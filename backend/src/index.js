@@ -25,8 +25,28 @@ app.use('/api/tasks', tasksRoutes);
 
 // Add a root route to respond to GET requests at "/"
 app.get('/', (req, res) => {
-  res.send('Welcome to the DEVOP2 API!');
+  res.send(`
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>DEVOP2</title>
+        <style>
+          body {
+            background-color: lightblue;
+            font-family: sans-serif;
+          }
+          h1 {
+            font-size: 2rem;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Welcome to the DEVOP2 API!</h1>
+      </body>
+    </html>
+  `);
 });
+
 
 // Start the server using the port from config.js
 app.listen(config.port, () => {
