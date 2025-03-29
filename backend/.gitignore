@@ -1,0 +1,10 @@
+# This file tells Git which files or directories to ignore in version control.
+# For this project, we ignore node_modules to prevent including all installed packages.
+# Ignore node_modules to prevent tracking installed packages
+node_modules/
+
+# Optional: Ignore npm or yarn debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+

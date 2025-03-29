@@ -1,0 +1,4 @@
+# This .gitignore file lists files and directories to exclude from version control.
+# Typically, it includes node_modules and the build output directory (dist) to keep the repository clean.
+node_modules/
+dist/
