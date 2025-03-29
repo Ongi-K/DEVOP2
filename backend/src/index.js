@@ -34,18 +34,27 @@ app.get('/', (req, res) => {
           body {
             background-color: lightblue;
             font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
           }
           h1 {
             font-size: 2rem;
+            margin-bottom: 1rem;
+          }
+          p {
+            font-size: 1.2rem;
+            line-height: 1.4;
           }
         </style>
       </head>
       <body>
         <h1>Welcome to the DEVOP2 API!</h1>
+        <p>This project is a web-based platform for students to manage assignments, share notes, and store lecture recordings.</p>
       </body>
     </html>
   `);
 });
+
 
 
 // Start the server using the port from config.js
