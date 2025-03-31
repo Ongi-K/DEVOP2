@@ -27,29 +27,71 @@ app.use('/api/tasks', tasksRoutes);
 app.get('/', (req, res) => {
   res.send(`
     <!DOCTYPE html>
-    <html>
+    <html lang="en">
       <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>DEVOP2</title>
         <style>
           body {
-            background-color: lightblue;
-            font-family: sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f6f9;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+          }
+          .container {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 40px;
+            max-width: 700px;
+            width: 90%;
+            text-align: center;
           }
           h1 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            color: #0f62fe;
           }
           p {
-            font-size: 1.2rem;
-            line-height: 1.4;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+          }
+          ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 1rem;
+            text-align: left;
+          }
+          li {
+            margin-bottom: 0.6rem;
+            padding-left: 1.2rem;
+            position: relative;
+          }
+          li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #0f62fe;
           }
         </style>
       </head>
       <body>
-        <h1>Welcome to the DEVOP2 API!</h1>
-        <p>This project is a web-based platform for students to manage assignments, share notes, and store lecture recordings.</p>
+        <div class="container">
+          <h1>🚀 Welcome To The Homepage For Our Devop Project</h1>
+          <p>A modern platform for students to:</p>
+          <ul>
+            <li>Manage assignments and tasks</li>
+            <li>Share and organize class notes</li>
+            <li>Store and access lecture recordings</li>
+          </ul>
+        </div>
       </body>
     </html>
   `);
