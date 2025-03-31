@@ -37,7 +37,7 @@ app.get('/', (req, res) => {
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f4f6f9;
+            background: #e5e7eb;
             color: #333;
             display: flex;
             align-items: center;
@@ -45,9 +45,9 @@ app.get('/', (req, res) => {
             min-height: 100vh;
           }
           .container {
-            background: #fff;
+            background: #e5e7eb;
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
             padding: 40px;
             max-width: 700px;
             width: 90%;
